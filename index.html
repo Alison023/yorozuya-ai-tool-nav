@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页 · YOROZUYA 万事屋</title>
+<meta name="description" content="Yorozuya 万事屋：工具导航与学习资源站，按场景取货，按路径入门。">
+<meta name="keywords" content="工具导航,学习路径,提示词,前端开发,课程项目">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="images/logo.svg" alt="Yorozuya 万事屋">
+      <span class="brand-text">
+        <span class="brand-name">YOROZUYA</span>
+        <span class="brand-slogan">万事屋</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a class="nav-link is-current" href="index.html">首页</a></div><div class="nav-item"><a class="nav-link" href="tools/chat.html">工具库</a><div class="submenu"><a href="tools/chat.html">对话与写作</a><a href="tools/media.html">图像与视频</a><a href="tools/code.html">编程开发</a><a href="tools/office.html">办公效率</a><a href="tools/research.html">学术研究</a></div></div><div class="nav-item"><a class="nav-link" href="prompts/index.html">提示词库</a><div class="submenu"><a href="prompts/index.html">提示词库总览</a><a href="prompts/writing.html">写作模板</a><a href="prompts/coding.html">编程模板</a></div></div><div class="nav-item"><a class="nav-link" href="learn/index.html">学习路径</a><div class="submenu"><a href="learn/index.html">路径总览</a><a href="learn/beginner.html">新手入门</a><a href="learn/prompt.html">提示词进阶</a></div></div><div class="nav-item"><a class="nav-link" href="news/index.html">资讯评测</a><div class="submenu"><a href="news/index.html">资讯与评测</a></div></div><div class="nav-item"><a class="nav-link" href="user/login.html">用户中心</a><div class="submenu"><a href="user/register.html">注册账号</a><a href="user/login.html">登录</a><a href="user/favorites.html">我的收藏</a></div></div>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="index.html" method="get">
+        <input type="search" name="q" placeholder="搜工具 / 场景" data-search data-search-target="index.html">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="user-area" data-user-area
+           data-login-url="user/login.html"
+           data-register-url="user/register.html"
+           data-fav-url="user/favorites.html"></div>
+      <button class="nav-toggle" type="button">☰</button>
+    </div>
+  </div>
+</div>
+<div class="hero">
+  <div class="slide slide-a is-active">
+    <div class="slide-inner">
+      <span class="slide-tag">YOROZUYA · 万事屋</span>
+      <h2 class="slide-title">把常用的工具，摆在<em>自己的货架</em>上</h2>
+      <p class="slide-desc">分类入库、按场景取货、按路径上手。17 条工具条目与学习资源，一页找到入口，不用在收藏夹里翻。</p>
+      <div class="slide-actions"><a class="btn btn-primary" href="tools/chat.html">浏览工具库</a><a class="btn btn-ghost" href="learn/index.html">先看学习路径</a></div>
+    </div>
+  </div>
+  <div class="slide slide-b">
+    <div class="slide-inner">
+      <span class="slide-tag">本周新增 · 提示词模板</span>
+      <h2 class="slide-title">会提问，比多注册<em>十个账号</em>更管用</h2>
+      <p class="slide-desc">写作与编程两套模板，按“角色 / 材料 / 结构 / 验收 / 禁止”五段写成，复制就能用。</p>
+      <div class="slide-actions"><a class="btn btn-warm" href="prompts/index.html">打开提示词库</a><a class="btn btn-ghost" href="learn/prompt.html">看进阶方法</a></div>
+    </div>
+  </div>
+  <div class="slide slide-c">
+    <div class="slide-inner">
+      <span class="slide-tag">评测 · 第 01 期</span>
+      <h2 class="slide-title">同一份报告，三个工具<em>差在哪</em></h2>
+      <p class="slide-desc">同样的提纲与材料分给三个对话工具，比结构完整度、术语准确度和可改成本，结论写在正文里。</p>
+      <div class="slide-actions"><a class="btn btn-primary" href="news/review-1.html">读这篇评测</a><a class="btn btn-ghost" href="news/index.html">看全部资讯</a></div>
+    </div>
+  </div>
+  <div class="hero-dots"><button class="dot is-active" type="button" aria-label="第 1 屏"></button><button class="dot" type="button" aria-label="第 2 屏"></button><button class="dot" type="button" aria-label="第 3 屏"></button></div>
+  <button class="hero-arrow hero-prev" type="button" aria-label="上一屏">‹</button>
+  <button class="hero-arrow hero-next" type="button" aria-label="下一屏">›</button>
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">按场景取货</h2>
+        <p class="section-sub">先想清楚要办什么事，再去对应的货位</p>
+      </div>
+      <a class="section-more" href="tools/chat.html">全部工具 &rsaquo;</a>
+    </div>
+    <div class="grid-scene">
+<a class="scene-card reveal" href="tools/chat.html">
+  <div class="scene-index">01 / 08</div>
+  <h3 class="scene-name">写课程报告</h3>
+  <p class="scene-desc">提纲、扩写、润色、摘要，一条线走完。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="tools/media.html">
+  <div class="scene-index">02 / 08</div>
+  <h3 class="scene-name">做站点配图</h3>
+  <p class="scene-desc">主视觉、横幅、系列插图，风格统一。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="tools/code.html">
+  <div class="scene-index">03 / 08</div>
+  <h3 class="scene-name">写前端代码</h3>
+  <p class="scene-desc">补模板、读报错、改样式，少来回复制。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="tools/office.html">
+  <div class="scene-index">04 / 08</div>
+  <h3 class="scene-name">整理会议纪要</h3>
+  <p class="scene-desc">录音转写、分段、提待办。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="tools/research.html">
+  <div class="scene-index">05 / 08</div>
+  <h3 class="scene-name">查文献做综述</h3>
+  <p class="scene-desc">先摸清概念，再回原文核对。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="prompts/index.html">
+  <div class="scene-index">06 / 08</div>
+  <h3 class="scene-name">攒提示词</h3>
+  <p class="scene-desc">把好用的提问存成模板，反复复用。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="learn/index.html">
+  <div class="scene-index">07 / 08</div>
+  <h3 class="scene-name">按路径入门</h3>
+  <p class="scene-desc">六周从认工具到接入工作流。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a><a class="scene-card reveal" href="user/favorites.html">
+  <div class="scene-index">08 / 08</div>
+  <h3 class="scene-name">收藏常用工具</h3>
+  <p class="scene-desc">登录后把常用入口收进自己的货架。</p>
+  <span class="scene-arrow">进去看看 &rsaquo;</span>
+</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">柜台上的常用货</h2>
+        <p class="section-sub">六个先上手，注册一个就能用起来</p>
+      </div>
+      <a class="section-more" href="tools/media.html">更多分类 &rsaquo;</a>
+    </div>
+    <div class="tool-grid">
+<div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon"><img src="images/logos/chatgpt.png" alt="ChatGPT logo"></div>
+    <div>
+      <h3 class="tool-name">ChatGPT</h3>
+      <span class="tool-tag">通用对话</span>
+    </div>
+  </div>
+  <p class="tool-desc">通用对话式助手。适合把零散想法整理成提纲、把长文压成要点、把中文改成更书面或更口语的表达。</p>
+  <div class="tool-foot">
+    <span class="price">有免费额度，深度使用需订阅</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="chatgpt" data-fav-name="ChatGPT" data-fav-url="tools/chatgpt.html" data-fav-desc="通用对话式助手。适合把零散想法整理成提纲、把长文压成要点、把中文改成更书面或更口语的表达。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/chatgpt.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div><div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon t-accent"><img src="images/logos/deepseek.png" alt="DeepSeek logo"></div>
+    <div>
+      <h3 class="tool-name">DeepSeek</h3>
+      <span class="tool-tag">中文友好</span>
+    </div>
+  </div>
+  <p class="tool-desc">中文理解稳定，长文档处理省心。读指导书、拆实验要求、把老师的话翻成待办清单都好用。</p>
+  <div class="tool-foot">
+    <span class="price">免费使用</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="deepseek" data-fav-name="DeepSeek" data-fav-url="tools/deepseek.html" data-fav-desc="中文理解稳定，长文档处理省心。读指导书、拆实验要求、把老师的话翻成待办清单都好用。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/deepseek.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div><div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon"><img src="images/logos/claude.png" alt="Claude logo"></div>
+    <div>
+      <h3 class="tool-name">Claude</h3>
+      <span class="tool-tag">长文写作</span>
+    </div>
+  </div>
+  <p class="tool-desc">擅长长文结构与语气一致性，适合写章节较多、需要前后呼应的文档，也适合逐段润色。</p>
+  <div class="tool-foot">
+    <span class="price">有免费额度，重度使用需订阅</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="claude" data-fav-name="Claude" data-fav-url="tools/claude.html" data-fav-desc="擅长长文结构与语气一致性，适合写章节较多、需要前后呼应的文档，也适合逐段润色。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/claude.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div><div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon"><img src="images/logos/midjourney.png" alt="Midjourney logo"></div>
+    <div>
+      <h3 class="tool-name">Midjourney</h3>
+      <span class="tool-tag">图像生成</span>
+    </div>
+  </div>
+  <p class="tool-desc">出图质量稳定的图像生成平台，适合做站点配图、封面主视觉、风格统一的系列插图。</p>
+  <div class="tool-foot">
+    <span class="price">订阅制</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="midjourney" data-fav-name="Midjourney" data-fav-url="tools/midjourney.html" data-fav-desc="出图质量稳定的图像生成平台，适合做站点配图、封面主视觉、风格统一的系列插图。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/midjourney.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div><div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon t-accent"><img src="images/logos/jimeng.png" alt="即梦 logo"></div>
+    <div>
+      <h3 class="tool-name">即梦</h3>
+      <span class="tool-tag">中文出图</span>
+    </div>
+  </div>
+  <p class="tool-desc">中文提示词友好的图像与短视频工具，出图快，适合课程项目里临时补素材。</p>
+  <div class="tool-foot">
+    <span class="price">有免费额度</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="jimeng" data-fav-name="即梦" data-fav-url="tools/jimeng.html" data-fav-desc="中文提示词友好的图像与短视频工具，出图快，适合课程项目里临时补素材。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/jimeng.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div><div class="tool-card reveal">
+  <div class="tool-head">
+    <div class="tool-icon"><img src="images/logos/kling.png" alt="可灵 logo"></div>
+    <div>
+      <h3 class="tool-name">可灵</h3>
+      <span class="tool-tag">视频生成</span>
+    </div>
+  </div>
+  <p class="tool-desc">图生视频与文生视频工具，适合做站点演示视频、动态海报、课程答辩的开场短片。</p>
+  <div class="tool-foot">
+    <span class="price">有免费额度</span>
+    <div>
+      <button class="fav-btn" type="button" data-fav-id="kling" data-fav-name="可灵" data-fav-url="tools/kling.html" data-fav-desc="图生视频与文生视频工具，适合做站点演示视频、动态海报、课程答辩的开场短片。" data-login-url="user/login.html">收藏</button>
+      <a class="mini-link" href="tools/kling.html">查看详情 &rsaquo;</a>
+    </div>
+  </div>
+</div>
+    </div>
+    <p class="no-result">没有匹配的工具，试试换个关键词，或到工具库全部浏览。</p>
+  </div>
+
+  <div class="section">
+    <div class="section-head">
+      <div>
+        <h2 class="section-title">店里的新鲜事</h2>
+        <p class="section-sub">项目进展、工具评测、选型方法</p>
+      </div>
+      <a class="section-more" href="news/index.html">全部资讯 &rsaquo;</a>
+    </div>
+    <div class="news-stack">
+<a class="news-item reveal" href="pages/about.html">
+  <div class="news-date">2026-11-14</div>
+  <div>
+    <h3 class="news-title">本组站点进入联调阶段：28 个页面全部落地</h3>
+    <p class="news-excerpt">首页轮播、二级导航、表单校验三条主线已跑通，剩下的是逐页核对文案与图片。</p>
+  </div>
+  <div class="news-tag">项目进展</div>
+</a><a class="news-item reveal" href="news/review-1.html">
+  <div class="news-date">2026-11-10</div>
+  <div>
+    <h3 class="news-title">评测：三款对话工具写同一份课程报告，差在哪</h3>
+    <p class="news-excerpt">同样的提纲与材料，分别交给三个工具，比较结构完整度、术语准确度与可改成本。</p>
+  </div>
+  <div class="news-tag">评测</div>
+</a><a class="news-item reveal" href="learn/beginner.html">
+  <div class="news-date">2026-11-06</div>
+  <div>
+    <h3 class="news-title">选工具的三个笨办法：先看导出、再看费用、最后看速度</h3>
+    <p class="news-excerpt">花哨的功能用不上几次，能不能导出成自己要的格式，才决定它会不会留在工作流里。</p>
+  </div>
+  <div class="news-tag">方法</div>
+</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="notice">
+      <strong>怎么用这家店：</strong>不注册也能看全部内容；注册后可以把常用工具收进「我的收藏」，下次直接从这里取货。
+      所有账号与收藏只存在你自己的浏览器里，换设备不会同步，也不会提交到服务器。
+    </div>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand-name">YOROZUYA</div>
+        <p>万事屋不挑活儿：工具是货架上一格格的货位，分类是货架的分区，学习路径是从进门到出师的走法。一店在手，工具不求人。</p>
+      </div>
+      <div class="footer-col">
+        <h4>工具库</h4>
+        <ul>
+          <li><a href="tools/chat.html">对话与写作</a></li>
+          <li><a href="tools/media.html">图像与视频</a></li>
+          <li><a href="tools/code.html">编程开发</a></li>
+          <li><a href="tools/office.html">办公效率</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="prompts/index.html">提示词库</a></li>
+          <li><a href="learn/index.html">学习路径</a></li>
+          <li><a href="news/index.html">资讯与评测</a></li>
+          <li><a href="pages/submit.html">推荐工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="pages/about.html">关于本站</a></li>
+          <li><a href="user/register.html">注册账号</a></li>
+          <li><a href="user/login.html">登录</a></li>
+          <li><a href="user/favorites.html">我的收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Yorozuya 万事屋 · 《Web 前端开发技术》综合实验作品 · 2025 级软件工程 · 本地演示站点，数据存于浏览器</div>
+  </div>
+</div>
+<button class="back-top" type="button" title="回到顶部">↑</button>
+<script src="js/storage.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

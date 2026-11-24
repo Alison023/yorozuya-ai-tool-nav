@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>注册 · YOROZUYA 万事屋</title>
+<meta name="description" content="注册本地账号，用于收藏常用工具。">
+<meta name="keywords" content="工具导航,学习路径,提示词,前端开发,课程项目">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../images/logo.svg" alt="Yorozuya 万事屋">
+      <span class="brand-text">
+        <span class="brand-name">YOROZUYA</span>
+        <span class="brand-slogan">万事屋</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a class="nav-link" href="../index.html">首页</a></div><div class="nav-item"><a class="nav-link" href="../tools/chat.html">工具库</a><div class="submenu"><a href="../tools/chat.html">对话与写作</a><a href="../tools/media.html">图像与视频</a><a href="../tools/code.html">编程开发</a><a href="../tools/office.html">办公效率</a><a href="../tools/research.html">学术研究</a></div></div><div class="nav-item"><a class="nav-link" href="../prompts/index.html">提示词库</a><div class="submenu"><a href="../prompts/index.html">提示词库总览</a><a href="../prompts/writing.html">写作模板</a><a href="../prompts/coding.html">编程模板</a></div></div><div class="nav-item"><a class="nav-link" href="../learn/index.html">学习路径</a><div class="submenu"><a href="../learn/index.html">路径总览</a><a href="../learn/beginner.html">新手入门</a><a href="../learn/prompt.html">提示词进阶</a></div></div><div class="nav-item"><a class="nav-link" href="../news/index.html">资讯评测</a><div class="submenu"><a href="../news/index.html">资讯与评测</a></div></div><div class="nav-item"><a class="nav-link is-current" href="../user/login.html">用户中心</a><div class="submenu"><a href="../user/register.html">注册账号</a><a href="../user/login.html">登录</a><a href="../user/favorites.html">我的收藏</a></div></div>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="../index.html" method="get">
+        <input type="search" name="q" placeholder="搜工具 / 场景" data-search data-search-target="../index.html">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="user-area" data-user-area
+           data-login-url="../user/login.html"
+           data-register-url="../user/register.html"
+           data-fav-url="../user/favorites.html"></div>
+      <button class="nav-toggle" type="button">☰</button>
+    </div>
+  </div>
+</div>
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">首页</a><span>/</span>用户中心<span>/</span>注册</div>
+    <h1 class="page-title">注册账号</h1>
+    <p class="page-desc">账号只保存在你自己的浏览器里，用于收藏工具。不提交服务器，不发送验证码。</p>
+  </div>
+</div>
+<div class="form-page">
+  <div class="form-card">
+    <h2 class="form-title">建立你的货架</h2>
+    <p class="form-hint">注册后可以把常用工具收进「我的收藏」</p>
+    <div class="form-msg"></div>
+    <form data-form="register" data-redirect="../index.html" novalidate>
+      <div class="form-row">
+        <label class="form-label" for="username">账号 <span class="req">*</span></label>
+        <input class="form-input" id="username" name="username" type="text"
+               data-rule="username" data-required placeholder="4–16 位字母、数字或下划线" autocomplete="off">
+        <p class="form-tip">例如 lihaoyang 或 yoro_01</p>
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="password">密码 <span class="req">*</span></label>
+        <input class="form-input" id="password" name="password" type="password"
+               data-rule="password" data-required placeholder="6–20 位，含字母和数字">
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="password2">确认密码 <span class="req">*</span></label>
+        <input class="form-input" id="password2" name="password2" type="password" data-required placeholder="再输入一次密码">
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="nickname">昵称</label>
+        <input class="form-input" id="nickname" name="nickname" type="text" data-rule="nickname" placeholder="选填，2–12 个字">
+        <p class="form-error"></p>
+      </div>
+      <div class="check-row">
+        <input id="agree" name="agree" type="checkbox">
+        <label for="agree">我已阅读站点说明：账号与收藏只存本地，换设备不会同步。</label>
+      </div>
+      <button class="submit-btn" type="submit">注册并进入站点</button>
+    </form>
+    <p class="form-footer">已有账号？<a href="login.html">直接登录</a></p>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand-name">YOROZUYA</div>
+        <p>万事屋不挑活儿：工具是货架上一格格的货位，分类是货架的分区，学习路径是从进门到出师的走法。一店在手，工具不求人。</p>
+      </div>
+      <div class="footer-col">
+        <h4>工具库</h4>
+        <ul>
+          <li><a href="../tools/chat.html">对话与写作</a></li>
+          <li><a href="../tools/media.html">图像与视频</a></li>
+          <li><a href="../tools/code.html">编程开发</a></li>
+          <li><a href="../tools/office.html">办公效率</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="../prompts/index.html">提示词库</a></li>
+          <li><a href="../learn/index.html">学习路径</a></li>
+          <li><a href="../news/index.html">资讯与评测</a></li>
+          <li><a href="../pages/submit.html">推荐工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="../pages/about.html">关于本站</a></li>
+          <li><a href="../user/register.html">注册账号</a></li>
+          <li><a href="../user/login.html">登录</a></li>
+          <li><a href="../user/favorites.html">我的收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Yorozuya 万事屋 · 《Web 前端开发技术》综合实验作品 · 2025 级软件工程 · 本地演示站点，数据存于浏览器</div>
+  </div>
+</div>
+<button class="back-top" type="button" title="回到顶部">↑</button>
+<script src="../js/storage.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
