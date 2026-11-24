@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>评测 01 · YOROZUYA 万事屋</title>
+<meta name="description" content="同一份报告交给三个对话工具，比较结构、术语与可改成本。">
+<meta name="keywords" content="工具导航,学习路径,提示词,前端开发,课程项目">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../images/logo.svg" alt="Yorozuya 万事屋">
+      <span class="brand-text">
+        <span class="brand-name">YOROZUYA</span>
+        <span class="brand-slogan">万事屋</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a class="nav-link" href="../index.html">首页</a></div><div class="nav-item"><a class="nav-link" href="../tools/chat.html">工具库</a><div class="submenu"><a href="../tools/chat.html">对话与写作</a><a href="../tools/media.html">图像与视频</a><a href="../tools/code.html">编程开发</a><a href="../tools/office.html">办公效率</a><a href="../tools/research.html">学术研究</a></div></div><div class="nav-item"><a class="nav-link" href="../prompts/index.html">提示词库</a><div class="submenu"><a href="../prompts/index.html">提示词库总览</a><a href="../prompts/writing.html">写作模板</a><a href="../prompts/coding.html">编程模板</a></div></div><div class="nav-item"><a class="nav-link" href="../learn/index.html">学习路径</a><div class="submenu"><a href="../learn/index.html">路径总览</a><a href="../learn/beginner.html">新手入门</a><a href="../learn/prompt.html">提示词进阶</a></div></div><div class="nav-item"><a class="nav-link is-current" href="../news/index.html">资讯评测</a><div class="submenu"><a href="../news/index.html">资讯与评测</a></div></div><div class="nav-item"><a class="nav-link" href="../user/login.html">用户中心</a><div class="submenu"><a href="../user/register.html">注册账号</a><a href="../user/login.html">登录</a><a href="../user/favorites.html">我的收藏</a></div></div>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="../index.html" method="get">
+        <input type="search" name="q" placeholder="搜工具 / 场景" data-search data-search-target="../index.html">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="user-area" data-user-area
+           data-login-url="../user/login.html"
+           data-register-url="../user/register.html"
+           data-fav-url="../user/favorites.html"></div>
+      <button class="nav-toggle" type="button">☰</button>
+    </div>
+  </div>
+</div>
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../news/index.html">资讯评测</a><span>/</span>评测 01</div>
+    <h1 class="page-title">评测 01：同一份报告，三个工具差在哪</h1>
+    <p class="page-desc">材料、提纲、字数要求完全一致，只换工具。比较结构完整度、术语准确度、可改成本三项。</p>
+  </div>
+</div>
+<div class="container">
+  <div class="detail-wrap">
+    <div class="detail-main">
+      <div class="article-body">
+        <p>测试材料是一份 Web 前端综合实验报告的第二章：需要交代选题与站点定位，约 600 字，含三条技术路线说明。三个工具拿到完全相同的输入：一份提纲、站点背景、字数要求。</p>
+
+        <h3>结构完整度</h3>
+        <p>三份输出都能覆盖提纲的三个小节，差别在段落之间的过渡。有一份把“技术路线”写成了并列清单，读起来省事，但看不出为什么这样选；另外两份补了取舍理由，其中一份还主动指出提纲里缺一个“测试方式”小节。</p>
+
+        <h3>术语准确度</h3>
+        <p>三家都把“DIV+CSS 布局”写对了，但有两家把“轮播”与“滑动效果”混用。术语混用不算错，改起来却费时间，因为要逐处替换并检查上下文。</p>
+
+        <h3>可改成本</h3>
+        <p>这一项差距最明显。写得越长不代表越好用：一份 800 字的输出里有近一半需要删；另一份 560 字，几乎可以整段保留，只改了两处数据。</p>
+
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>工具 A</h3>
+            <ul><li>结构：齐全，过渡偏生硬</li><li>术语：混用 2 处</li><li>可改：需删掉约 30%</li><li>适合：先要骨架</li></ul>
+          </div>
+          <div class="compare-card">
+            <h3>工具 B</h3>
+            <ul><li>结构：齐全，补出遗漏小节</li><li>术语：准确</li><li>可改：保留约 90%</li><li>适合：直接改稿</li></ul>
+          </div>
+          <div class="compare-card">
+            <h3>工具 C</h3>
+            <ul><li>结构：齐全，层次清楚</li><li>术语：混用 1 处</li><li>可改：句子偏长，需拆</li><li>适合：长文润色</li></ul>
+          </div>
+        </div>
+
+        <h3>结论</h3>
+        <p>先要骨架就选输出更全的那个，再自己删；要直接进文档，就选更克制、句子更短的那个。真正省时间的不是“生成得多”，而是“改得少”。</p>
+        <p>另外提醒一句：三份输出里关于工具价格的描述都过时了，最后只能回官网核对。这一条对任何工具都成立。</p>
+      </div>
+    </div>
+    <div class="detail-side">
+      <div class="side-card">
+        <h3 class="side-title">测试条件</h3>
+        <ul class="info-list">
+          <li><span class="k">材料</span><span class="v">同一份提纲</span></li>
+          <li><span class="k">字数</span><span class="v">约 600 字</span></li>
+          <li><span class="k">变量</span><span class="v">只换工具</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3 class="side-title">相关条目</h3>
+        <div class="link-list">
+          <a href="../tools/chatgpt.html">ChatGPT <span>&rsaquo;</span></a>
+          <a href="../tools/deepseek.html">DeepSeek <span>&rsaquo;</span></a>
+          <a href="../tools/claude.html">Claude <span>&rsaquo;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="height:40px;"></div>
+</div>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand-name">YOROZUYA</div>
+        <p>万事屋不挑活儿：工具是货架上一格格的货位，分类是货架的分区，学习路径是从进门到出师的走法。一店在手，工具不求人。</p>
+      </div>
+      <div class="footer-col">
+        <h4>工具库</h4>
+        <ul>
+          <li><a href="../tools/chat.html">对话与写作</a></li>
+          <li><a href="../tools/media.html">图像与视频</a></li>
+          <li><a href="../tools/code.html">编程开发</a></li>
+          <li><a href="../tools/office.html">办公效率</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="../prompts/index.html">提示词库</a></li>
+          <li><a href="../learn/index.html">学习路径</a></li>
+          <li><a href="../news/index.html">资讯与评测</a></li>
+          <li><a href="../pages/submit.html">推荐工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="../pages/about.html">关于本站</a></li>
+          <li><a href="../user/register.html">注册账号</a></li>
+          <li><a href="../user/login.html">登录</a></li>
+          <li><a href="../user/favorites.html">我的收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Yorozuya 万事屋 · 《Web 前端开发技术》综合实验作品 · 2025 级软件工程 · 本地演示站点，数据存于浏览器</div>
+  </div>
+</div>
+<button class="back-top" type="button" title="回到顶部">↑</button>
+<script src="../js/storage.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

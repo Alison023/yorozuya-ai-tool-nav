@@ -1,0 +1,6 @@
+# 工作过程与原始材料，不进仓库
+report_work/
+design-demos/
+*.docx
+*.zip
+~$*

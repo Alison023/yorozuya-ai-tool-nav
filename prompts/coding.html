@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>编程模板 5 条 · YOROZUYA 万事屋</title>
+<meta name="description" content="读报错、补注释、生成函数、重构样式、补测试。">
+<meta name="keywords" content="工具导航,学习路径,提示词,前端开发,课程项目">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../images/logo.svg" alt="Yorozuya 万事屋">
+      <span class="brand-text">
+        <span class="brand-name">YOROZUYA</span>
+        <span class="brand-slogan">万事屋</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a class="nav-link" href="../index.html">首页</a></div><div class="nav-item"><a class="nav-link" href="../tools/chat.html">工具库</a><div class="submenu"><a href="../tools/chat.html">对话与写作</a><a href="../tools/media.html">图像与视频</a><a href="../tools/code.html">编程开发</a><a href="../tools/office.html">办公效率</a><a href="../tools/research.html">学术研究</a></div></div><div class="nav-item"><a class="nav-link is-current" href="../prompts/index.html">提示词库</a><div class="submenu"><a href="../prompts/index.html">提示词库总览</a><a href="../prompts/writing.html">写作模板</a><a href="../prompts/coding.html">编程模板</a></div></div><div class="nav-item"><a class="nav-link" href="../learn/index.html">学习路径</a><div class="submenu"><a href="../learn/index.html">路径总览</a><a href="../learn/beginner.html">新手入门</a><a href="../learn/prompt.html">提示词进阶</a></div></div><div class="nav-item"><a class="nav-link" href="../news/index.html">资讯评测</a><div class="submenu"><a href="../news/index.html">资讯与评测</a></div></div><div class="nav-item"><a class="nav-link" href="../user/login.html">用户中心</a><div class="submenu"><a href="../user/register.html">注册账号</a><a href="../user/login.html">登录</a><a href="../user/favorites.html">我的收藏</a></div></div>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="../index.html" method="get">
+        <input type="search" name="q" placeholder="搜工具 / 场景" data-search data-search-target="../index.html">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="user-area" data-user-area
+           data-login-url="../user/login.html"
+           data-register-url="../user/register.html"
+           data-fav-url="../user/favorites.html"></div>
+      <button class="nav-toggle" type="button">☰</button>
+    </div>
+  </div>
+</div>
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">首页</a><span>/</span><a href="../prompts/index.html">提示词库</a><span>/</span>编程模板 5 条</div>
+    <h1 class="page-title">编程模板 5 条</h1>
+    <p class="page-desc">读报错、补注释、生成函数、重构样式、补测试。</p>
+  </div>
+</div>
+<div class="container">
+  <div class="section">
+    <div class="prompt-stack">
+<div class="prompt-card reveal">
+  <h3>读懂报错</h3>
+  <p class="prompt-meta">用途：把错误翻译成人话</p>
+  <div class="prompt-block">下面是浏览器控制台的报错和我对应的代码片段。请先说明这条报错在说什么，再指出最可能出问题的位置，最后给出两种修法并说明各自副作用。不要重写整段代码。</div>
+</div><div class="prompt-card reveal">
+  <h3>补注释</h3>
+  <p class="prompt-meta">用途：让代码能被讲解</p>
+  <div class="prompt-block">给下面这段 JavaScript 逐块补中文注释，说明这一块在做什么、为什么要这么做。注释面向初学者，不解释语法常识，只解释意图与关键判断。</div>
+</div><div class="prompt-card reveal">
+  <h3>生成函数</h3>
+  <p class="prompt-meta">用途：按需求给出最小实现</p>
+  <div class="prompt-block">写一个 JavaScript 函数：接收一个数组和一个关键词，返回数组里文本包含关键词的元素。要求：不引入任何库，函数体不超过 12 行，包含空数组与关键词为空两种情况的处理，并在末尾给出两个调用示例。</div>
+</div><div class="prompt-card reveal">
+  <h3>重构样式</h3>
+  <p class="prompt-meta">用途：把重复 CSS 收拢</p>
+  <div class="prompt-block">下面是我写的 CSS，有很多重复的颜色和圆角。请用 CSS 变量重构，保持视觉结果完全一致，只改变写法。输出重构后的完整代码，并列出新增的变量名及用途。</div>
+</div><div class="prompt-card reveal">
+  <h3>补测试用例</h3>
+  <p class="prompt-meta">用途：交作业前自测</p>
+  <div class="prompt-block">为下面这个表单校验函数写测试用例清单：覆盖正常输入、边界长度、非法字符、空值四类情况。每条用例写清输入、期望结果和判定理由，用清单形式输出，不需要测试框架代码。</div>
+</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="notice">模板里带 {{}} 的地方替换成自己的材料；替换完先读一遍，确认没有留下别人的信息。</div>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand-name">YOROZUYA</div>
+        <p>万事屋不挑活儿：工具是货架上一格格的货位，分类是货架的分区，学习路径是从进门到出师的走法。一店在手，工具不求人。</p>
+      </div>
+      <div class="footer-col">
+        <h4>工具库</h4>
+        <ul>
+          <li><a href="../tools/chat.html">对话与写作</a></li>
+          <li><a href="../tools/media.html">图像与视频</a></li>
+          <li><a href="../tools/code.html">编程开发</a></li>
+          <li><a href="../tools/office.html">办公效率</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="../prompts/index.html">提示词库</a></li>
+          <li><a href="../learn/index.html">学习路径</a></li>
+          <li><a href="../news/index.html">资讯与评测</a></li>
+          <li><a href="../pages/submit.html">推荐工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="../pages/about.html">关于本站</a></li>
+          <li><a href="../user/register.html">注册账号</a></li>
+          <li><a href="../user/login.html">登录</a></li>
+          <li><a href="../user/favorites.html">我的收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Yorozuya 万事屋 · 《Web 前端开发技术》综合实验作品 · 2025 级软件工程 · 本地演示站点，数据存于浏览器</div>
+  </div>
+</div>
+<button class="back-top" type="button" title="回到顶部">↑</button>
+<script src="../js/storage.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

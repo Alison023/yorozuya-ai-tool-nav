@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>推荐工具 · YOROZUYA 万事屋</title>
+<meta name="description" content="推荐一个常用工具，写入本地记录。">
+<meta name="keywords" content="工具导航,学习路径,提示词,前端开发,课程项目">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../images/logo.svg" alt="Yorozuya 万事屋">
+      <span class="brand-text">
+        <span class="brand-name">YOROZUYA</span>
+        <span class="brand-slogan">万事屋</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <div class="nav-item"><a class="nav-link" href="../index.html">首页</a></div><div class="nav-item"><a class="nav-link" href="../tools/chat.html">工具库</a><div class="submenu"><a href="../tools/chat.html">对话与写作</a><a href="../tools/media.html">图像与视频</a><a href="../tools/code.html">编程开发</a><a href="../tools/office.html">办公效率</a><a href="../tools/research.html">学术研究</a></div></div><div class="nav-item"><a class="nav-link" href="../prompts/index.html">提示词库</a><div class="submenu"><a href="../prompts/index.html">提示词库总览</a><a href="../prompts/writing.html">写作模板</a><a href="../prompts/coding.html">编程模板</a></div></div><div class="nav-item"><a class="nav-link" href="../learn/index.html">学习路径</a><div class="submenu"><a href="../learn/index.html">路径总览</a><a href="../learn/beginner.html">新手入门</a><a href="../learn/prompt.html">提示词进阶</a></div></div><div class="nav-item"><a class="nav-link" href="../news/index.html">资讯评测</a><div class="submenu"><a href="../news/index.html">资讯与评测</a></div></div><div class="nav-item"><a class="nav-link" href="../user/login.html">用户中心</a><div class="submenu"><a href="../user/register.html">注册账号</a><a href="../user/login.html">登录</a><a href="../user/favorites.html">我的收藏</a></div></div>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" action="../index.html" method="get">
+        <input type="search" name="q" placeholder="搜工具 / 场景" data-search data-search-target="../index.html">
+        <button type="submit">搜索</button>
+      </form>
+      <div class="user-area" data-user-area
+           data-login-url="../user/login.html"
+           data-register-url="../user/register.html"
+           data-fav-url="../user/favorites.html"></div>
+      <button class="nav-toggle" type="button">☰</button>
+    </div>
+  </div>
+</div>
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">首页</a><span>/</span>推荐工具</div>
+    <h1 class="page-title">推荐一个工具</h1>
+    <p class="page-desc">把你常用的工具报上来。课程项目中只做本地记录，不提交服务器。</p>
+  </div>
+</div>
+<div class="form-page">
+  <div class="form-card">
+    <h2 class="form-title">填一条推荐</h2>
+    <p class="form-hint">说清它解决什么问题，比说它多强更有用</p>
+    <div class="form-msg"></div>
+    <form data-form="submit" novalidate>
+      <div class="form-row">
+        <label class="form-label" for="tname">工具名称 <span class="req">*</span></label>
+        <input class="form-input" id="tname" name="tname" type="text" data-required placeholder="例如 DeepSeek">
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="tsite">官网地址</label>
+        <input class="form-input" id="tsite" name="tsite" type="url" placeholder="https://">
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="temail">你的邮箱 <span class="req">*</span></label>
+        <input class="form-input" id="temail" name="temail" type="email" data-rule="email" data-required placeholder="name@example.com">
+        <p class="form-error"></p>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="treason">推荐理由 <span class="req">*</span></label>
+        <input class="form-input" id="treason" name="treason" type="text" data-required placeholder="一句话说明它帮你办成了什么">
+        <p class="form-error"></p>
+      </div>
+      <button class="submit-btn" type="submit">提交推荐</button>
+    </form>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <div class="brand-name">YOROZUYA</div>
+        <p>万事屋不挑活儿：工具是货架上一格格的货位，分类是货架的分区，学习路径是从进门到出师的走法。一店在手，工具不求人。</p>
+      </div>
+      <div class="footer-col">
+        <h4>工具库</h4>
+        <ul>
+          <li><a href="../tools/chat.html">对话与写作</a></li>
+          <li><a href="../tools/media.html">图像与视频</a></li>
+          <li><a href="../tools/code.html">编程开发</a></li>
+          <li><a href="../tools/office.html">办公效率</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <ul>
+          <li><a href="../prompts/index.html">提示词库</a></li>
+          <li><a href="../learn/index.html">学习路径</a></li>
+          <li><a href="../news/index.html">资讯与评测</a></li>
+          <li><a href="../pages/submit.html">推荐工具</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于</h4>
+        <ul>
+          <li><a href="../pages/about.html">关于本站</a></li>
+          <li><a href="../user/register.html">注册账号</a></li>
+          <li><a href="../user/login.html">登录</a></li>
+          <li><a href="../user/favorites.html">我的收藏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">Yorozuya 万事屋 · 《Web 前端开发技术》综合实验作品 · 2025 级软件工程 · 本地演示站点，数据存于浏览器</div>
+  </div>
+</div>
+<button class="back-top" type="button" title="回到顶部">↑</button>
+<script src="../js/storage.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
