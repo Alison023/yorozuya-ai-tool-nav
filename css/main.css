@@ -567,6 +567,19 @@ body {
   object-fit: contain;
 }
 
+/* 详情页官方标志 */
+.detail-mark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.detail-mark img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 .tool-icon.t-accent {
   border-color: var(--orange);
 }
